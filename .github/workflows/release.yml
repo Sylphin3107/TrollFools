@@ -58,7 +58,7 @@ jobs:
 
       - name: Build Packages
         run: |
-          make package
+          make
           cp packages/*.tipa .
           find .theos/obj -name "*.dSYM" -exec cp -r {} . \;
 
